@@ -8,6 +8,9 @@ Created on Sun Apr 22 10:04:22 2018
 user1 = input("Player 1: What is your name? ")
 user2 = input("Player 2: What is your name? ")
 user1answer = input(str(user1) + ", please choose 'rock,' 'paper,' or 'scissors.' ")
+if user1answer != 'rock' + 'scissors' + 'paper':
+     print(str(user1) + "this is not a valid entry")
+     
 user2answer = input(str(user2) + ", please choose 'rock,' 'paper,' or 'scissors.' ")
 
 #u1 = user1answer...
@@ -16,6 +19,7 @@ user2answer = input(str(user2) + ", please choose 'rock,' 'paper,' or 'scissors.
 
 if user1answer == user2answer:
     print("It's a tie.")
+  
 elif user1answer == 'rock':
     if user2answer == 'scissors':
         print(str(user1) + " wins, rock beats scissors.")
